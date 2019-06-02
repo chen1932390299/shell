@@ -1,0 +1,406 @@
+
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta http-equiv="X-UA-Compatible" content="IE=Edge"/>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width">
+  <meta name="format-detection" content="telephone=no">
+<meta name="keywords"  content="Linux,Linux系统,Linux命令,Linux命令大全,Linux常用命令,shell，shell脚本,shell脚本学习,Linux命令查询,Linux命令用法详解,Linux命令实例。" />
+  <title>Linux命令大全(手册) &#8211; 真正好用的Linux命令在线查询网站</title>
+<!-- DX-Seo plugin start -->
+<meta name="description" content="专注于Linux命令大全与详解的在线命令查询网站，包含Linux命令手册、Linux命令详解、Linux命令学习与shell脚本编程大全等优质学习资料，准确，丰富，稳定，在技术之路上为您护航！" />
+<!-- DX-Seo plugin end -->
+<link rel='dns-prefetch' href='//fonts.googleapis.com' />
+<link rel='dns-prefetch' href='//s.w.org' />
+<link rel="alternate" type="application/rss+xml" title="Linux命令大全(手册) &raquo; Feed" href="https://www.linuxcool.com/feed" />
+<link rel="alternate" type="application/rss+xml" title="Linux命令大全(手册) &raquo; 评论Feed" href="https://www.linuxcool.com/comments/feed" />
+		<script type="text/javascript">
+			window._wpemojiSettings = {"baseUrl":"https:\/\/s.w.org\/images\/core\/emoji\/12.0.0-1\/72x72\/","ext":".png","svgUrl":"https:\/\/s.w.org\/images\/core\/emoji\/12.0.0-1\/svg\/","svgExt":".svg","source":{"concatemoji":"https:\/\/www.linuxcool.com\/wp-includes\/js\/wp-emoji-release.min.js?ver=5.2.1"}};
+			!function(a,b,c){function d(a,b){var c=String.fromCharCode;l.clearRect(0,0,k.width,k.height),l.fillText(c.apply(this,a),0,0);var d=k.toDataURL();l.clearRect(0,0,k.width,k.height),l.fillText(c.apply(this,b),0,0);var e=k.toDataURL();return d===e}function e(a){var b;if(!l||!l.fillText)return!1;switch(l.textBaseline="top",l.font="600 32px Arial",a){case"flag":return!(b=d([55356,56826,55356,56819],[55356,56826,8203,55356,56819]))&&(b=d([55356,57332,56128,56423,56128,56418,56128,56421,56128,56430,56128,56423,56128,56447],[55356,57332,8203,56128,56423,8203,56128,56418,8203,56128,56421,8203,56128,56430,8203,56128,56423,8203,56128,56447]),!b);case"emoji":return b=d([55357,56424,55356,57342,8205,55358,56605,8205,55357,56424,55356,57340],[55357,56424,55356,57342,8203,55358,56605,8203,55357,56424,55356,57340]),!b}return!1}function f(a){var c=b.createElement("script");c.src=a,c.defer=c.type="text/javascript",b.getElementsByTagName("head")[0].appendChild(c)}var g,h,i,j,k=b.createElement("canvas"),l=k.getContext&&k.getContext("2d");for(j=Array("flag","emoji"),c.supports={everything:!0,everythingExceptFlag:!0},i=0;i<j.length;i++)c.supports[j[i]]=e(j[i]),c.supports.everything=c.supports.everything&&c.supports[j[i]],"flag"!==j[i]&&(c.supports.everythingExceptFlag=c.supports.everythingExceptFlag&&c.supports[j[i]]);c.supports.everythingExceptFlag=c.supports.everythingExceptFlag&&!c.supports.flag,c.DOMReady=!1,c.readyCallback=function(){c.DOMReady=!0},c.supports.everything||(h=function(){c.readyCallback()},b.addEventListener?(b.addEventListener("DOMContentLoaded",h,!1),a.addEventListener("load",h,!1)):(a.attachEvent("onload",h),b.attachEvent("onreadystatechange",function(){"complete"===b.readyState&&c.readyCallback()})),g=c.source||{},g.concatemoji?f(g.concatemoji):g.wpemoji&&g.twemoji&&(f(g.twemoji),f(g.wpemoji)))}(window,document,window._wpemojiSettings);
+		</script>
+		<style type="text/css">
+img.wp-smiley,
+img.emoji {
+	display: inline !important;
+	border: none !important;
+	box-shadow: none !important;
+	height: 1em !important;
+	width: 1em !important;
+	margin: 0 .07em !important;
+	vertical-align: -0.1em !important;
+	background: none !important;
+	padding: 0 !important;
+}
+</style>
+	<link rel='stylesheet' id='wp-block-library-css'  href='https://www.linuxcool.com/wp-includes/css/dist/block-library/style.min.css?ver=5.2.1' type='text/css' media='all' />
+<link rel='stylesheet' id='theme-style-css'  href='https://www.linuxcool.com/wp-content/themes/knowhow/style.css?ver=5.2.1' type='text/css' media='all' />
+<style id='theme-style-inline-css' type='text/css'>
+ 
+				/* Links */
+				a, 
+				a:visited { color:#a03717; }
+				a:hover, 
+				.widget a:hover,
+				#primary-nav ul a:hover,
+				#footer-nav a:hover,
+				#breadcrumbs a:hover { color:#a03717; }
+				
+				/* Theme Color */
+				#commentform #submit, 
+				.st_faq h2.active .action, 
+				.widget_categories ul span, 
+				.pagination .current, 
+				.tags a, 
+				.page-links span,
+				#comments .comment-meta .author-badge,
+				input[type="reset"],
+				input[type="submit"],
+				input[type="button"] { background: #a03717; }
+				#live-search #searchsubmit, input[type="submit"] { background-color: #a03717; }
+				.tags a:before { border-color: transparent #a03717 transparent transparent; }
+
+				
+				
+				
+</style>
+<link rel='stylesheet' id='theme-font-css'  href='https://fonts.googleapis.com/css?family=Open+Sans:400,400italic,600,700&#038;subset=latin,latin-ext' type='text/css' media='all' />
+<link rel='stylesheet' id='font-awesome-css'  href='https://www.linuxcool.com/wp-content/themes/knowhow/css/font-awesome.min.css?ver=5.2.1' type='text/css' media='all' />
+<link rel='stylesheet' id='shortcodes-css'  href='https://www.linuxcool.com/wp-content/themes/knowhow/framework/shortcodes/shortcodes.css?ver=5.2.1' type='text/css' media='all' />
+<script type='text/javascript' src='https://www.linuxcool.com/wp-includes/js/jquery/jquery.js?ver=1.12.4-wp'></script>
+<script type='text/javascript' src='https://www.linuxcool.com/wp-includes/js/jquery/jquery-migrate.min.js?ver=1.4.1'></script>
+<link rel='https://api.w.org/' href='https://www.linuxcool.com/wp-json/' />
+<link rel="EditURI" type="application/rsd+xml" title="RSD" href="https://www.linuxcool.com/xmlrpc.php?rsd" />
+<link rel="wlwmanifest" type="application/wlwmanifest+xml" href="https://www.linuxcool.com/wp-includes/wlwmanifest.xml" /> 
+<meta name="generator" content="WordPress 5.2.1" />
+<!--[if lt IE 9]><script src="https://www.linuxcool.com/wp-content/themes/knowhow/js/html5.js"></script><![endif]--><!--[if (gte IE 6)&(lte IE 8)]><script src="https://www.linuxcool.com/wp-content/themes/knowhow/js/selectivizr-min.js"></script><![endif]--><link rel="icon" href="https://www.linuxcool.com/wp-content/uploads/2019/03/cropped-redhat-32x32.png" sizes="32x32" />
+<link rel="icon" href="https://www.linuxcool.com/wp-content/uploads/2019/03/cropped-redhat-192x192.png" sizes="192x192" />
+<link rel="apple-touch-icon-precomposed" href="https://www.linuxcool.com/wp-content/uploads/2019/03/cropped-redhat-180x180.png" />
+<meta name="msapplication-TileImage" content="https://www.linuxcool.com/wp-content/uploads/2019/03/cropped-redhat-270x270.png" />
+</head>
+<body class="home blog">
+
+  <!-- #site-container -->
+  <div id="site-container" class="clearfix">
+
+    
+    <!-- #header -->
+    <header id="site-header" class="clearfix" role="banner">
+      <div class="ht-container">
+
+        <!-- #logo -->
+        <div id="logo">
+          <h1>          <a title="Linux命令大全(手册)" href="https://www.linuxcool.com">
+                          Linux命令大全(手册)                      </a>
+          </h1>        </div>
+<br>
+<p>准确，丰富，稳定，在技术之路上为您护航！</p>
+        <!-- /#logo -->
+
+        
+      </div>
+    </header>
+    <!-- /#header -->
+
+    <!-- #live-search -->
+    <div id="live-search">
+      <div class="ht-container">
+        <div id="search-wrap">
+          <form role="search" method="get" id="searchform" class="clearfix" action="https://www.linuxcool.com/">
+            <input type="text" onfocus="if (this.value == '请输入一个命令或相关功能') {this.value = '';}" onblur="if (this.value == '')  {this.value = '请输入一个命令或相关功能';}" value="请输入一个命令或相关功能" name="s" id="s" autocapitalize="off" autocorrect="off" autocomplete="off" />
+            <i class="live-search-loading fa fa-spinner fa-spin"></i>
+            <button type="submit" id="searchsubmit">
+              <i class='fa fa-search'></i><span>查询</span>
+            </button>
+          </form>
+        </div>
+      </div>
+    </div>
+<!-- /#live-search -->
+
+
+<!-- #primary -->
+<div id="primary" class="sidebar-right clearfix"> 
+  <!-- .ht-container -->
+  <div class="ht-container">
+    
+    <!-- #content -->
+    <section id="content" role="main">
+
+      <div id="homepage-categories" class="clearfix">
+        <div class="row"><div class="column col-half 1"><h3> <a href="https://www.linuxcool.com/category/file" title="View all posts in 1：文件管理" >1：文件管理</a></h3><ul class="category-posts">                          <li class="format-standard"><a href="https://www.linuxcool.com/ls">
+              ls命令 &#8211; 显示指定工作目录下的内容及属性信息            </a></li>
+
+                                      <li class="format-standard"><a href="https://www.linuxcool.com/pwd">
+              pwd命令 &#8211; 显示当前路径            </a></li>
+
+                                      <li class="format-standard"><a href="https://www.linuxcool.com/mkdir">
+              mkdir命令 &#8211; 创建目录            </a></li>
+
+                                      <li class="format-standard"><a href="https://www.linuxcool.com/cp">
+              cp命令 &#8211; 复制文件或目录            </a></li>
+
+                                      <li class="format-standard"><a href="https://www.linuxcool.com/mv">
+              mv命令 &#8211; 移动或改名文件            </a></li>
+
+            </ul></div><div class="column col-half 2"><h3> <a href="https://www.linuxcool.com/category/document" title="View all posts in 2：文档编辑" >2：文档编辑</a></h3><ul class="category-posts">                          <li class="format-standard"><a href="https://www.linuxcool.com/cat">
+              cat命令 &#8211; 在终端设备上显示文件内容            </a></li>
+
+                                      <li class="format-standard"><a href="https://www.linuxcool.com/echo">
+              echo命令 &#8211; 输出字符串或提取Shell变量的值            </a></li>
+
+                                      <li class="format-standard"><a href="https://www.linuxcool.com/rmdir">
+              rmdir命令 &#8211; 删除空目录            </a></li>
+
+                                      <li class="format-standard"><a href="https://www.linuxcool.com/tail">
+              tail命令 &#8211; 查看文件尾部内容            </a></li>
+
+                                      <li class="format-standard"><a href="https://www.linuxcool.com/expr">
+              expr命令 &#8211; 命令行计数器            </a></li>
+
+            </ul></div></div><div class="row"><div class="column col-half 3"><h3> <a href="https://www.linuxcool.com/category/system" title="View all posts in 3：系统管理" >3：系统管理</a></h3><ul class="category-posts">                          <li class="format-standard"><a href="https://www.linuxcool.com/uname">
+              uname命令 &#8211; 显示系统信息            </a></li>
+
+                                      <li class="format-standard"><a href="https://www.linuxcool.com/rsh">
+              rsh命令 &#8211; 远端登入的shell            </a></li>
+
+                                      <li class="format-standard"><a href="https://www.linuxcool.com/yes">
+              yes命令 &#8211; 重复打印字符串            </a></li>
+
+                                      <li class="format-standard"><a href="https://www.linuxcool.com/useradd">
+              useradd命令 &#8211; 创建用户            </a></li>
+
+                                      <li class="format-standard"><a href="https://www.linuxcool.com/who">
+              who命令 &#8211; 打印当前登录用户            </a></li>
+
+            </ul></div><div class="column col-half 4"><h3> <a href="https://www.linuxcool.com/category/disk" title="View all posts in 4：磁盘管理" >4：磁盘管理</a></h3><ul class="category-posts">                          <li class="format-standard"><a href="https://www.linuxcool.com/df">
+              df命令 &#8211; 显示磁盘空间使用情况            </a></li>
+
+                                      <li class="format-standard"><a href="https://www.linuxcool.com/lsblk">
+              lsblk命令 &#8211; 查看系统的磁盘            </a></li>
+
+                                      <li class="format-standard"><a href="https://www.linuxcool.com/fdisk">
+              fdisk命令 &#8211; 磁盘分区            </a></li>
+
+                                      <li class="format-standard"><a href="https://www.linuxcool.com/quota">
+              quota命令 &#8211; 显示磁盘已使用的空间与限制            </a></li>
+
+                                      <li class="format-standard"><a href="https://www.linuxcool.com/arpd">
+              arpd命令 &#8211; 收集arp信息            </a></li>
+
+            </ul></div></div><div class="row"><div class="column col-half 5"><h3> <a href="https://www.linuxcool.com/category/transfer" title="View all posts in 5：文件传输" >5：文件传输</a></h3><ul class="category-posts">                          <li class="format-standard"><a href="https://www.linuxcool.com/curl">
+              curl命令 &#8211; 文件传输工具            </a></li>
+
+                                      <li class="format-standard"><a href="https://www.linuxcool.com/ftpwho">
+              ftpwho命令 &#8211; 显示ftp会话信息            </a></li>
+
+                                      <li class="format-standard"><a href="https://www.linuxcool.com/fsck">
+              fsck命令 &#8211; 检查并修复Linux文件系统            </a></li>
+
+                                      <li class="format-standard"><a href="https://www.linuxcool.com/ftpshut">
+              ftpshut命令 &#8211; 指定时间关闭FTP服务器            </a></li>
+
+                                      <li class="format-standard"><a href="https://www.linuxcool.com/lprm">
+              lprm命令 &#8211; 删除打印队列中的打印任务            </a></li>
+
+            </ul></div><div class="column col-half 6"><h3> <a href="https://www.linuxcool.com/category/network" title="View all posts in 6：网络通讯" >6：网络通讯</a></h3><ul class="category-posts">                          <li class="format-standard"><a href="https://www.linuxcool.com/ping">
+              ping命令 &#8211; 测试主机间网络连通性            </a></li>
+
+                                      <li class="format-standard"><a href="https://www.linuxcool.com/netstat">
+              netstat命令 &#8211; 显示网络状态            </a></li>
+
+                                      <li class="format-standard"><a href="https://www.linuxcool.com/ifconfig">
+              ifconfig命令 &#8211; 显示或设置网络设备            </a></li>
+
+                                      <li class="format-standard"><a href="https://www.linuxcool.com/ss">
+              ss命令 &#8211; 显示活动套接字信息            </a></li>
+
+                                      <li class="format-standard"><a href="https://www.linuxcool.com/ipcalc">
+              ipcalc命令 &#8211; 简单的IP地址计算器            </a></li>
+
+            </ul></div></div><div class="row"><div class="column col-half 7"><h3> <a href="https://www.linuxcool.com/category/device" title="View all posts in 7：设备管理" >7：设备管理</a></h3><ul class="category-posts">                          <li class="format-standard"><a href="https://www.linuxcool.com/mount">
+              mount命令 &#8211; 文件系统挂载            </a></li>
+
+                                      <li class="format-standard"><a href="https://www.linuxcool.com/setleds">
+              setleds命令 &#8211; 设定键盘上方三个 LED 的状态            </a></li>
+
+                                      <li class="format-standard"><a href="https://www.linuxcool.com/loadkeys">
+              loadkeys命令 &#8211; 改变linux键盘驱动程序            </a></li>
+
+            </ul></div><div class="column col-half 8"><h3> <a href="https://www.linuxcool.com/category/backup" title="View all posts in 8：备份压缩" >8：备份压缩</a></h3><ul class="category-posts">                          <li class="format-standard"><a href="https://www.linuxcool.com/gzip">
+              gzip命令 &#8211; 压缩和解压文件            </a></li>
+
+                                      <li class="format-standard"><a href="https://www.linuxcool.com/unzip">
+              unzip命令 &#8211; 解压缩zip文件            </a></li>
+
+                                      <li class="format-standard"><a href="https://www.linuxcool.com/zip">
+              zip命令 &#8211; 压缩文件            </a></li>
+
+                                      <li class="format-standard"><a href="https://www.linuxcool.com/bzip2">
+              bzip2命令 &#8211; bz2文件的压缩程序            </a></li>
+
+                                      <li class="format-standard"><a href="https://www.linuxcool.com/zipinfo">
+              zipinfo命令 &#8211; 查看压缩文件信息            </a></li>
+
+            </ul></div></div><div class="row"><div class="column col-half 9"><h3> <a href="https://www.linuxcool.com/category/other" title="View all posts in 9：其他命令" >9：其他命令</a></h3><ul class="category-posts">                          <li class="format-standard"><a href="https://www.linuxcool.com/bc">
+              bc命令 &#8211; 浮点运算            </a></li>
+
+                                      <li class="format-standard"><a href="https://www.linuxcool.com/rmmod">
+              rmmod命令 &#8211; 删除模块            </a></li>
+
+            </ul></div><div class="column col-half 10"><h3> <a href="https://www.linuxcool.com/category/knowledge" title="View all posts in 扩展：知识干货" >扩展：知识干货</a></h3><ul class="category-posts">                          <li class="format-standard"><a href="https://www.linuxcool.com/pronunciation">
+              中国程序员最容易读错的单词汇总（带正确发音示范）            </a></li>
+
+            </ul></div>  </div>
+</div>
+
+</section>
+<!-- #content -->
+
+    <!-- #sidebar -->
+  <aside id="sidebar" role="complementary">
+    		<div id="recent-posts-2" class="widget widget_recent_entries clearfix">		<h4 class="widget-title"><span>每日学习</span></h4>		<ul>
+											<li>
+					<a href="https://www.linuxcool.com/fdformat">fdformat命令 &#8211; 对指定的软碟机装置进行低阶格式化</a>
+									</li>
+											<li>
+					<a href="https://www.linuxcool.com/sfdisk">sfdisk命令 &#8211; 硬盘分区工具</a>
+									</li>
+											<li>
+					<a href="https://www.linuxcool.com/losetup">losetup命令 &#8211; 设置循环设备</a>
+									</li>
+											<li>
+					<a href="https://www.linuxcool.com/mdel">mdel命令 &#8211; 删除 MSDOS 格式的档案</a>
+									</li>
+											<li>
+					<a href="https://www.linuxcool.com/rgrep">rgrep命令 &#8211; 查找文件里符合条件的字符串</a>
+									</li>
+											<li>
+					<a href="https://www.linuxcool.com/mdir">mdir命令 &#8211; 显示MS-DOS目录</a>
+									</li>
+											<li>
+					<a href="https://www.linuxcool.com/patch">patch命令 &#8211; 修补文件</a>
+									</li>
+											<li>
+					<a href="https://www.linuxcool.com/split">split命令 &#8211; 文件分割</a>
+									</li>
+											<li>
+					<a href="https://www.linuxcool.com/ncftp">ncftp命令 &#8211; 传输文件</a>
+									</li>
+											<li>
+					<a href="https://www.linuxcool.com/mcopy">mcopy命令 &#8211; 复制 MSDOS 格式文件到Linux中</a>
+									</li>
+											<li>
+					<a href="https://www.linuxcool.com/cfdisk">cfdisk命令 &#8211; 用于磁盘分区</a>
+									</li>
+											<li>
+					<a href="https://www.linuxcool.com/mkdosfs">mkdosfs命令 &#8211; 建立DOS文件系统</a>
+									</li>
+											<li>
+					<a href="https://www.linuxcool.com/lndir">lndir命令 &#8211; 连接目录内容</a>
+									</li>
+											<li>
+					<a href="https://www.linuxcool.com/talk">talk命令 &#8211; 用于与其他使用者对谈</a>
+									</li>
+											<li>
+					<a href="https://www.linuxcool.com/e2fsck">e2fsck命令 &#8211; 检查使用 Linux ext2档案系统的partition是否正常工作</a>
+									</li>
+											<li>
+					<a href="https://www.linuxcool.com/mkfs">mkfs命令 &#8211; 在特定分区上建立文件系统</a>
+									</li>
+											<li>
+					<a href="https://www.linuxcool.com/compress">compress命令 &#8211; unix档案压缩命令</a>
+									</li>
+											<li>
+					<a href="https://www.linuxcool.com/samba">samba命令 &#8211; 控制Samba服务器</a>
+									</li>
+											<li>
+					<a href="https://www.linuxcool.com/mesg">mesg命令 &#8211; 设置终端机的写入权限</a>
+									</li>
+											<li>
+					<a href="https://www.linuxcool.com/uulog">uulog命令 &#8211; 显示UUCP记录文件</a>
+									</li>
+											<li>
+					<a href="https://www.linuxcool.com/telnet">telnet命令 &#8211; 远端登入</a>
+									</li>
+											<li>
+					<a href="https://www.linuxcool.com/uux">uux命令 &#8211; 在远端的UUCP主机上执行命令</a>
+									</li>
+											<li>
+					<a href="https://www.linuxcool.com/getty">getty命令 &#8211; 用于设置终端机模式</a>
+									</li>
+											<li>
+					<a href="https://www.linuxcool.com/quotaoff">quotaoff命令 &#8211; 关闭磁盘空间限制</a>
+									</li>
+											<li>
+					<a href="https://www.linuxcool.com/arpwatch">arpwatch命令 &#8211; 监听网络上ARP的记录</a>
+									</li>
+					</ul>
+		</div>    <!-- #sidebar -->
+  </aside>
+  
+</div>
+<!-- /.ht-container -->
+</div>
+<!-- #primary -->
+
+<!-- #footer-widgets -->
+<!-- /#footer-widgets -->
+
+<!-- #site-footer -->
+<footer id="site-footer" class="clearfix" role="contentinfo">
+  <div class="ht-container">
+
+    
+
+  <small id="copyright">
+          <p style="text-align: center;">京ICP备16058923号</p>
+<p style="text-align: center;">推荐用书：《<a href="https://www.linuxprobe.com/" target="_blank" rel="noreferrer noopener" aria-label="Linux就该这么学（在新窗口打开）">Linux就该这么学</a>》</p>
+<p style="text-align: center;">真正好用的Linux命令在线查询手册</p>      </small>
+ 
+</div>
+<!-- /.ht-container -->
+</footer> 
+<!-- /#site-footer -->
+<script>
+var _hmt = _hmt || [];
+(function() {
+  var hm = document.createElement("script");
+  hm.src = "https://hm.baidu.com/hm.js?688c8b862521ebd236ee2271bdd52cff";
+  var s = document.getElementsByTagName("script")[0]; 
+  s.parentNode.insertBefore(hm, s);
+})();
+</script>
+<script>
+(function(){
+    var bp = document.createElement('script');
+    var curProtocol = window.location.protocol.split(':')[0];
+    if (curProtocol === 'https') {
+        bp.src = 'https://zz.bdstatic.com/linksubmit/push.js';
+    }
+    else {
+        bp.src = 'http://push.zhanzhang.baidu.com/push.js';
+    }
+    var s = document.getElementsByTagName("script")[0];
+    s.parentNode.insertBefore(bp, s);
+})();
+</script>
+<!-- /#site-container -->
+</div>
+	<script type="text/javascript">
+	jQuery(document).ready(function() {
+	jQuery('#live-search #s').liveSearch({url: 'https://www.linuxcool.com/index.php?ajax=1&s='});
+	});
+	</script>
+<script type='text/javascript' src='https://www.linuxcool.com/wp-content/themes/knowhow/js/functions.js?ver=5.2.1'></script>
+<script type='text/javascript' src='https://www.linuxcool.com/wp-content/themes/knowhow/framework/shortcodes/shortcodes.js?ver=5.2.1'></script>
+<script type='text/javascript'>
+/* <![CDATA[ */
+var q2w3_sidebar_options = [{"sidebar":"st_primary","margin_top":10,"margin_bottom":200,"stop_id":"","screen_max_width":0,"screen_max_height":0,"width_inherit":false,"refresh_interval":1500,"window_load_hook":false,"disable_mo_api":false,"widgets":["recent-posts-2"]}];
+/* ]]> */
+</script>
+<script type='text/javascript' src='https://www.linuxcool.com/wp-content/plugins/q2w3-fixed-widget/js/q2w3-fixed-widget.min.js?ver=5.1.9'></script>
+<script type='text/javascript' src='https://www.linuxcool.com/wp-includes/js/wp-embed.min.js?ver=5.2.1'></script>
+<script type='text/javascript' src='https://www.linuxcool.com/wp-content/themes/knowhow/js/jquery.livesearch.js?ver=5.2.1'></script>
+</body>
+</html>
